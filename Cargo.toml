@@ -14,6 +14,6 @@ include = ["src/**/*", "LICENSE-*", "README.md", "CHANGELOG.md"]
 
 [dependencies]
 cpal = ">=0.12, <=0.13"
-rodio = ">=0.12, <=0.13"
+rodio = { version = ">=0.12, <=0.13", default-features = false, features = ["flac", "vorbis", "wav"] }
 rand = {version = "0.8", features = ["small_rng"]}
 rand_distr = "0.4"
